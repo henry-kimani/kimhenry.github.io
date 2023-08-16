@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack mole</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+  <script type="module" crossorigin src="../../assets/whack-cd70100e.js"></script>
+  <link rel="modulepreload" crossorigin href="../../assets/modulepreload-polyfill-3cfb730f.js">
+  <link rel="stylesheet" href="../../assets/whack-0b0352be.css">
+</head>
+<body>
+
+    <section class="whack-mole">
+        <div class="whack-mole-game">Whack Mole</div>
+        <div class="time">Time: <span id="timmer">60</span></div>
+        <span class="score" >Score: <span id="score">0</span>
+    </section>
+
+    <section class="grid">
+        <div class="grid-player-ground">
+            <div id="1"></div>
+            <div id="2"></div>
+            <div id="3"></div>
+            <div id="4"></div>
+            <div id="5"></div>
+            <div id="6"></div>
+            <div id="7"></div>
+            <div id="8"></div>
+            <div id="9"></div>
+        </div>
+    </section>
+
+    <section class="buttons">
+        <div id="mole"></div>
+        <div id="start">Start</div>
+        <div id="noobie" data-time="1000">Beginner</div>
+        <div id="pro" data-time="500">Pro</div>
+        <div id="legend" data-time="200">Legend</div>
+    </section>
+    <dialog id="d">
+        <div id="dialog">
+            <span id="game-over">GAME OVER</span>
+            <button id="close-modal">Close</button>
+        </div>
+    </dialog>
+    <!-- <picture>
+        <source type="image/webp" srcset="/whackmolebg.webp">
+        <img src="/whackmolebg.webp" alt="" id="whack-bg">
+    </picture> -->
+
+    
+</body>
+</html>

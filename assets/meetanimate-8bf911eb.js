@@ -1,0 +1,1 @@
+const l="ABCDEFGFIJKLMNOPQRSTUVWXYZ";function i(t){console.log("working");let e=0;const n=setInterval(()=>{t.target.innerHTML=t.target.innerHTML.split("").map((o,a)=>{if(a<e)return t.target.dataset.value[a];let r=Math.floor(Math.random()*26);return console.log(r),l[r]}).join(""),e==t.target.dataset.value.length&&clearInterval(n),e+=1/3},50)}export{i as default};

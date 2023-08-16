@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+  <script type="module" crossorigin src="../../assets/pong-40b18231.js"></script>
+  <link rel="modulepreload" crossorigin href="../../assets/modulepreload-polyfill-3cfb730f.js">
+  <link rel="stylesheet" href="../../assets/pong-7e04ff49.css">
+</head>
+<body>
+    <div class="score">
+        <div id="player-score">0</div>
+        <div id="computer-score">0</div>
+    </div>
+    <div class="ball" id="ball"></div>
+    <div class="paddle left" id="player-paddle"></div>
+    <div class="paddle right" id="computer-paddle"></div>
+
+    <dialog>
+        <h4 id="message"></h4>
+        <p>You only have three chances. <br /> You will have a free score if fail. </p>
+        <div id="dialog-score">
+            <div>YOU: <span class="dialog user"></span></div>
+            <div>COMPUTER: <span class="dialog computer"></span></div>
+        </div>
+        <div id="dialog-button">
+            <button data-start="start" >START</button>
+            <a href="../projects.html" id="exit-game">EXIT</a>
+        </div>
+
+    </dialog>
+
+    
+</body>
+</html>
